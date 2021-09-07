@@ -19,8 +19,19 @@ Do the following:
 
    HINT: no function required
 */
+votingAge = 22
 
+  if (age > 21) {
 
+    console.log(true);
+
+    }
+  else {
+  
+  console.log(false);
+
+ }
+ 
 
 /*
 Task 1b - Values
@@ -60,8 +71,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
 
 
@@ -109,9 +120,26 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if (age >= 1) {
+    if (weight > 15) {
+        return (0.02 * weight);
+    } else if (weight >= 11) {
+        return (0.03 * weight);
+    } else if (weight >= 6) {
+        return (0.04 * weight);
+    } else {
+        return (0.05 * weight);
+    }
+} else {
+    if (age >= (0.58)) {
+        return (0.04 * weight);
+    } else if (age >= (0.333)) {
+        return (0.05 * weight)
+    } else(0.1 * age)
 }
+}
+console.log(hungryDog(2, 11));
 
 
 
@@ -136,9 +164,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  /*add your code here*/
-}
+function game(user, computer)
 
 
 
@@ -149,13 +175,14 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
 1. Receive a number of kilometers
-2. Convert the number of kiolmeters received to miles
+2. Convert the number of kilometers received to miles
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles() {
+  return kilometers / 1609.344;
 }
+
 
 
 
@@ -167,7 +194,7 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(){
   /*add your code here*/
 }
 
